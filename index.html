@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/lib/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/app/app.css" />
+        
+    <title>Your Friendly, Neighborhood Twitter Feed</title>
+  </head>
+  <body>
+    <header class="row">
+      <div class="two columns">      
+        <textarea id="textarea" cols="50" rows="2"></textarea>
+        <input type="button" id="search" value="Search Twitter">
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="four columns">
+        <h4>Form Content</h4>
+        <p id="output"></p>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="javascripts/lib/foundation.min.js"></script>
+    <script src="javascripts/lib/ctwitter/build/ctwitter.js"></script>
+    <script src="javascripts/lib/bundle.js"></script>
+    <script src="javascripts/app/app.js"></script>
+  </body>
+</html>
