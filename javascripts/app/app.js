@@ -2,11 +2,13 @@
   "use strict";
 
   var textext = $("#textarea").textext({ plugins : "tags" });
-  var searchArray, i;
+  var searchString, i, searchArray;
 
   $("#search").bind("click", function () {
-    searchArray = textext.textext()[0].hiddenInput().val();
-    $("#output").append(searchArray);
+    searchString = textext.textext()[0].hiddenInput().val();
+    searchString = searchString.replace(/(["\[\]])/ig, "");
+    searchArray = searchString.split(/\,/);
+    $("#output").html(searchArray[1]);
   });
 
 }());
