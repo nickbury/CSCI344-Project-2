@@ -1,13 +1,19 @@
 @charset 'UTF-8';
 
+body {
+  background-color: #8ac2d9;
+}
+
 .title {
   font-family: 'Sintony', sans-serif;
+  color: #0c4862;
 }
 
 .disclaimer {
-  font-size: 9px;
+  font-size: 10px;
   font-family: 'Cutive Mono', serif;
   padding-left: 10px;
+  color: #0c4862;
 }
 
 .searchbar {
@@ -24,5 +30,5 @@
   text-align: center;
   font-size: 3em;
   font-family: 'Armata', sans-serif;
-  color: #606060;
+  color: #4a6c7b;
 }

@@ -10,7 +10,7 @@
       stream.on("data", function (tweet) {
         $(".output" + childnum).prepend("<div class='response'>" + tweet.text 
           + "</div>");
-        $(".response").fadeIn(250).delay(3250).fadeOut(250, function () {
+        $(".response").fadeIn(250).delay(3250).fadeOut(200, function () {
           $(this).remove();
         });
       });
