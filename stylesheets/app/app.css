@@ -18,3 +18,11 @@
   width: 25em;
   max-height: 5em;
 }
+
+.response {
+  display: none;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Armata', sans-serif;
+  color: #606060;
+}

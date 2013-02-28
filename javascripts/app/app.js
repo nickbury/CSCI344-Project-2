@@ -6,9 +6,13 @@
 
   function twitterStreamConstructor(searchterms, childnum) {
     var twitter = new ctwitter.CTwitter();
-    twitter.stream("statuses/filter", {lang: "en", track: searchArray}, function (stream) {
+    twitter.stream("statuses/filter", {lang: "en", track: searchterms}, function (stream) {
       stream.on("data", function (tweet) {
-        $(".output" + childnum).append("<p>" + tweet.text + "</p>");
+        $(".output" + childnum).prepend("<div class='response'>" + tweet.text 
+          + "</div>");
+        $(".response").fadeIn(250).delay(3250).fadeOut(250, function () {
+          $(this).remove();
+        });
       });
     });
   }
