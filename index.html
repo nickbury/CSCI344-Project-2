@@ -15,21 +15,22 @@
   <body>
 
     <header class="row">
-      <div class="seven columns">
-        <h4 class="title">Multiple Word Twitter Searcherizer*</h4>
-        <p class="disclaimer">*Not currently recognized by the <a href="http://www.psychiatry.org/">APA</a> as a valid mental disorder</p>
-      </div>
-      <div class="three columns searchbar">      
-        <textarea id="textarea" rows="1" placeholder="Enter search terms..."></textarea>
-      </div>
-      <div class="one column searchbar">
-        <input type="button" id="search" value="Search Twitter">
+      <div class="twelve columns">
+        <div class="seven columns">
+          <h4 class="title">Multiple Word Twitter Searcherizer*</h4>
+          <p class="disclaimer">*Not currently recognized by the <a href="http://www. psychiatry.org/">APA</a> as a valid mental disorder</p>
+        </div>
+        <div class="three columns offset-by-one searchbar">      
+          <textarea id="textarea" rows="1" placeholder="Press Enter to add search term"></textarea>
+          <input type="button" id="search" value="Search Twitter">
+        </div>
+        <hr>
       </div>
     </header>
 
     <div class="row">
-      <div class="twelve columns">
-        <p id="output"></p>
+      <div class="twelve columns output">
+        <h5 id="terms"></h5>
       </div>
     </div>
 
