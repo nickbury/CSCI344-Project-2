@@ -10,6 +10,7 @@
       stream.on("data", function (tweet) {
         $(".output" + childnum).prepend("<div class='response'>" + tweet.text 
           + "</div>");
+        $(".response").fitText(1.1, {minFontSize: 10, maxFontSize: '40px' });
         $(".response").fadeIn(250).delay(3250).fadeOut(200, function () {
           $(this).remove();
         });

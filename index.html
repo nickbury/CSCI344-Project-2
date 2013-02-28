@@ -9,6 +9,12 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/lib/foundation.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/app/app.css" />
     <link href="http://fonts.googleapis.com/css?family=Sintony|Cutive+Mono|Armata" rel="stylesheet" type="text/css" />
+
+    <!--
+      jQuery Plugins used:
+        FitText.js - https://github.com/davatron5000/FitText.js
+        TextExt - http://textextjs.com/
+    -->
         
     <script src="javascripts/lib/modernizr.foundation.js"></script>
   </head>
@@ -20,7 +26,7 @@
           <h4 class="title">Multiple Word Twitter Searcherizer*</h4>
           <p class="disclaimer">*Not currently recognized by the <a href="http://www. psychiatry.org/">APA</a> as a valid mental disorder</p>
         </div>
-        <div class="three columns searchbar">      
+        <div class="three columns offset-by-one searchbar">      
           <textarea id="textarea" rows="1" placeholder="Press Enter to add search term"></textarea>
           <a class="small secondary button" id="search">Search Twitter</a>
         </div>
@@ -30,7 +36,6 @@
 
     <div class="row">
       <div class="twelve columns output">
-        <h5 id="terms"></h5>
       </div>
     </div>
 
@@ -38,6 +43,7 @@
     <script src="javascripts/lib/foundation.min.js"></script>
     <script src="javascripts/lib/ctwitter/build/ctwitter.js"></script>
     <script src="javascripts/lib/bundle.js"></script>
+    <script src="javascripts/lib/jquery.fittext.js"></script>
     <script src="javascripts/app/app.js"></script>
   </body>
 </html>
