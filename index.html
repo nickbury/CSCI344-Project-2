@@ -2,23 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Your Friendly, Neighborhood Twitter Feed</title>
     
     <link rel="stylesheet" type="text/css" href="stylesheets/lib/foundation.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/app/app.css" />
+    <link href="http://fonts.googleapis.com/css?family=Sintony|Cutive+Mono" rel="stylesheet" type="text/css" />
         
-    <title>Your Friendly, Neighborhood Twitter Feed</title>
+    <script src="javascripts/lib/modernizr.foundation.js"></script>
   </head>
   <body>
+
     <header class="row">
-      <div class="two columns">      
-        <textarea id="textarea" cols="50" rows="2"></textarea>
+      <div class="seven columns">
+        <h4 class="title">Multiple Word Twitter Searcherizer*</h4>
+        <p class="disclaimer">*Not currently recognized by the <a href="http://www.psychiatry.org/">APA</a> as a valid mental disorder</p>
+      </div>
+      <div class="three columns searchbar">      
+        <textarea id="textarea" rows="1" placeholder="Enter search terms..."></textarea>
+      </div>
+      <div class="one column searchbar">
         <input type="button" id="search" value="Search Twitter">
       </div>
     </header>
 
     <div class="row">
-      <div class="four columns">
-        <div class="terms">Search Terms: </div>
+      <div class="twelve columns">
         <p id="output"></p>
       </div>
     </div>
