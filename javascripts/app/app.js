@@ -10,7 +10,7 @@
     twitter.stream("statuses/filter", {lang: "en", track: searchterms}, function (stream) {
       stream.on("data", function (tweet) {
         $(".output" + childnum).prepend("<div class='response'>" + tweet.text + "</div>");
-        $(".response").fitText(1.1, {minFontSize: 10, maxFontSize: '40px' });
+        $(".response").fitText(1.5, {minFontSize: '10px', maxFontSize: '40px' });
         $(".response").fadeIn(250).delay(3250).fadeOut(200, function () {
           $(this).remove();
         });
